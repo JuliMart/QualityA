@@ -3,27 +3,48 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CRUD </title>
+    <title>Rent-A-Car</title>
     <link rel="stylesheet" href="estilos.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body class="container">
-    <div class="mensaje-alerta">
-    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Titulo del Navbar -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Rent-a-Car</a>
+            </div>
+            <!-- Botones en el Navbar -->
+            <ul class="nav navbar-nav">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Mantenedor de Vehículos</a></li>
+            </ul>
+            <!-- Botón "Usuario Admin" en el lado derecho -->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html">Salir</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="jumbotron row ">
-        <h2> RENTAALGO <small>Gestión de Vehículos</small></h2>
-
+    <div class="jumbotron row">
         <div class="col-md-6">
             <hr>
             <p class="modo"> <span class="glyphicon glyphicon-plus"></span>Agregar Vehículo</p>
             <form id="vehiculos-form">
-                <input class="form-control" type="text" id="brand" placeholder="Marca">
-                <input class="form-control" type="text" id="plateCode" placeholder="Patente">
-                <input class="form-control" type="number" id="color" placeholder="Color">
-                <input class="form-control" type="date" id="date" placeholder="Año">
+                <input class="form-control" type="text" id="brand" placeholder="Marca" required>
+                <input class="form-control" type="text" id="model" placeholder="Modelo" required>
+                <input class="form-control" type="text" id="plateCode" placeholder="Patente" required>
+                <select class="form-control" id="color" required>
+                    <option value="" disabled selected class="placeholder-style">Color</option>
+                    <option value="Rojo">Rojo</option>
+                    <option value="Azul">Azul</option>
+                    <option value="Verde">Verde</option>
+                    <option value="Negro">Negro</option>
+                    <option value="Blanco">Blanco</option>
+                </select>
+                <input class="form-control" type="date" id="date" placeholder="Fecha de ingreso" required>
                 <br>
                 <input type="submit" class="btn btn-success" value="Guardar">
             </form>
@@ -36,17 +57,15 @@
         </div>
 
         <div class="col-md-6">
-            <img style="width:100%" src="red-mini-cooper-cartoon-illustration-crimson-old-fashioned-automobile-flat-color-object-vintage-personal-vehicle-isolated-on-white-background-urban-transport-new-stylish-auto-vector.jpg"
+            <img style="width:100%" src="mejores-vehiculos-familiares.webp"
                 alt="" />
         </div>
 
     </div>
-
-    <br>
-    <br>
     <table class="table" id="dbVehiculos-list">
-
     </table>
+    <div class="mensaje-alerta">
+    </div>
 
 </body>
 <script type="text/javascript" src="funciones.js"></script>

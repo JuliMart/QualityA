@@ -1,3 +1,104 @@
 .glyphicon-trash {
     color:red;
 }
+/* Estilo para el body */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el jumbotron */
+.jumbotron {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el título principal */
+.jumbotron h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilo para los formularios */
+.form-control {
+    margin-bottom: 10px;
+}
+
+/* Estilo para los botones */
+.btn {
+    border-radius: 3px;
+}
+
+/* Estilo para la tabla */
+.table {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el navbar */
+.navbar {
+    background-color: #333;
+    border-radius: 0;
+}
+
+/* Estilo para los enlaces en el navbar */
+.navbar-nav>li>a {
+    color: #fff;
+}
+
+/* Estilo para los enlaces activos en el navbar */
+.navbar-nav>li.active>a,
+.navbar-nav>li.active>a:hover,
+.navbar-nav>li.active>a:focus {
+    background-color: #555;
+}
+
+/* Estilo para los botones en el navbar */
+.navbar-nav.navbar-right>li>a {
+    color: #fff;
+}
+
+/* Estilo para el botón "Guardar" */
+.btn-success {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color: #fff;
+}
+
+/* Estilo para el botón "Guardar" al pasar el mouse por encima */
+.btn-success:hover {
+    background-color: #449d44;
+}
+
+/* Estilo para el botón "Guardar" al hacer clic */
+.btn-success:active {
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+/* Estilo para el botón "Guardar" desactivado */
+.btn-success:disabled {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    color: #fff;
+}
+
+/* Estilo para el botón "Guardar" desactivado al pasar el mouse por encima */
+.btn-success:disabled:hover {
+    background-color: #d43f3a;
+}
+body {
+    background-image: url('mejores-vehiculos-familiares.webp'); /* Reemplaza 'nombre_de_la_imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+}
+form {
+    background-image: url('mejores-vehiculos-familiares.webp'); /* Reemplaza 'nombre_de_la_imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo del formulario */
+    background-repeat: no-repeat; /* Evita que la imagen se repita en el fondo */
+    padding: 20px; /* Agrega un espacio de relleno alrededor del formulario para que la imagen se muestre correctamente */
+}
